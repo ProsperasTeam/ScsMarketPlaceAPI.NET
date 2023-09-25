@@ -1,0 +1,51 @@
+﻿version: '3.8'
+services:
+  rabbitmq:
+    container_name: "rabbitmq"
+    image: rabbitmq:management
+    environment:
+      - RABBITMQ_DEFAULT_USER=user
+      - RABBITMQ_DEFAULT_PASS=mypass
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+  postgres:
+    image: postgres:latest
+    container_name: "scsmarketplace-postgres"
+    environment:
+      POSTGRES_DB: marketplace-1
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: prosperas_password
+    ports:
+      - "5432:5432"
+
+  api:
+    build:
+      context: .
+      dockerfile: ScsMarketplace.API/Dockerfile
+    container_name: "scsmarketplace-api"
+    ports:
+      - "5000:80"
+    depends_on:
+      - rabbitmq
+      - postgres
+
+  test_service:
+    build:
+      context: .
+      dockerfile: ScsMarketplace.TestService/Dockerfile
+    container_name: "scsmarketplace-test-service"
+    depends_on:
+      - rabbitmq
+      - postgres
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: "pgadmin"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: pgadmin@example.com
+      PGADMIN_DEFAULT_PASSWORD: pgadminpassword
+    ports:
+      - "8080:80"
+    depends_on:
+      - postgres
