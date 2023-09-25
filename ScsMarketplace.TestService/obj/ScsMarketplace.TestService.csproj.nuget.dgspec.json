@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/endrit/Desktop/projects/stark-prosperas/ScsMarketplaceAPIDotNet/ScsMarketplace.TestService/ScsMarketplace.TestService.csproj": {}
+    "/Users/nderim/Desktop/STRONG/ScsMarketPlaceAPI.NET/ScsMarketplace.TestService/ScsMarketplace.TestService.csproj": {}
   },
   "projects": {
-    "/Users/endrit/Desktop/projects/stark-prosperas/ScsMarketplaceAPIDotNet/ScsMarketplace.TestService/ScsMarketplace.TestService.csproj": {
+    "/Users/nderim/Desktop/STRONG/ScsMarketPlaceAPI.NET/ScsMarketplace.TestService/ScsMarketplace.TestService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/endrit/Desktop/projects/stark-prosperas/ScsMarketplaceAPIDotNet/ScsMarketplace.TestService/ScsMarketplace.TestService.csproj",
+        "projectUniqueName": "/Users/nderim/Desktop/STRONG/ScsMarketPlaceAPI.NET/ScsMarketplace.TestService/ScsMarketplace.TestService.csproj",
         "projectName": "ScsMarketplace.TestService",
-        "projectPath": "/Users/endrit/Desktop/projects/stark-prosperas/ScsMarketplaceAPIDotNet/ScsMarketplace.TestService/ScsMarketplace.TestService.csproj",
-        "packagesPath": "/Users/endrit/.nuget/packages/",
-        "outputPath": "/Users/endrit/Desktop/projects/stark-prosperas/ScsMarketplaceAPIDotNet/ScsMarketplace.TestService/obj/",
+        "projectPath": "/Users/nderim/Desktop/STRONG/ScsMarketPlaceAPI.NET/ScsMarketplace.TestService/ScsMarketplace.TestService.csproj",
+        "packagesPath": "/Users/nderim/.nuget/packages/",
+        "outputPath": "/Users/nderim/Desktop/STRONG/ScsMarketPlaceAPI.NET/ScsMarketplace.TestService/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/endrit/.nuget/NuGet/NuGet.Config"
+          "/Users/nderim/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"

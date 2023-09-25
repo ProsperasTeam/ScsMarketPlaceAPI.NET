@@ -6,7 +6,7 @@ Console.WriteLine("Hello Consumer!");
 
 var factory = new ConnectionFactory()
 {
-    HostName = "http://rabbitmq",
+    HostName = "localhost",
     UserName = "user",
     Password = "mypass",
     VirtualHost = "/"
