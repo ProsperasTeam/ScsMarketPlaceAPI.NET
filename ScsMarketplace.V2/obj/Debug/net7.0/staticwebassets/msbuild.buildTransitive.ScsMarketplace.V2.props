@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/ScsMarketplace.V2.props" />
+</Project>

@@ -6,10 +6,10 @@ Console.WriteLine("Hello Consumer!");
 
 var factory = new ConnectionFactory()
 {
-    HostName = "http://rabbitmq",
+    HostName = "localhost",
     UserName = "user",
     Password = "mypass",
-    VirtualHost = "/"
+    Port = 5672
 };
 
 var connection = factory.CreateConnection();
@@ -17,7 +17,7 @@ var connection = factory.CreateConnection();
 using var channel = connection.CreateModel();
 
 
-channel.QueueDeclare("testQueue", durable: true, exclusive: false);
+channel.QueueDeclare("testQueue", durable: true, exclusive: false, autoDelete: false);
 
 var consumer = new EventingBasicConsumer(channel);
 
@@ -32,4 +32,9 @@ consumer.Received += (model, eventArgs) =>
 
 channel.BasicConsume("testQueue", true, consumer);
 
-Console.ReadKey();
+
+while (true)
+{
+    Console.WriteLine("application is up");
+    Thread.Sleep(2000);
+}

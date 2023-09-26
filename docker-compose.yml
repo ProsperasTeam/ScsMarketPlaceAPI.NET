@@ -33,8 +33,10 @@ services:
   test_service:
     build:
       context: .
-      dockerfile: ScsMarketplace.TestService/Dockerfile
+      dockerfile: ScsMarketplace.V2/Dockerfile
     container_name: "scsmarketplace-test-service"
+    environment: 
+      RabbitMQ__Host: "rabbitmq"
     depends_on:
       - rabbitmq
       - postgres

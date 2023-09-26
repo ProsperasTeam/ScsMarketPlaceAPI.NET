@@ -585,11 +585,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/endrit/Desktop/projects/stark-prosperas/ScsMarketplaceAPIDotNet/ScsMarketplace.API/ScsMarketplace.API.csproj",
+      "projectUniqueName": "/Users/endrit/Desktop/projects/stark-prosperas/ScsMarketPlaceAPI.NET/ScsMarketplace.API/ScsMarketplace.API.csproj",
       "projectName": "ScsMarketplace.API",
-      "projectPath": "/Users/endrit/Desktop/projects/stark-prosperas/ScsMarketplaceAPIDotNet/ScsMarketplace.API/ScsMarketplace.API.csproj",
+      "projectPath": "/Users/endrit/Desktop/projects/stark-prosperas/ScsMarketPlaceAPI.NET/ScsMarketplace.API/ScsMarketplace.API.csproj",
       "packagesPath": "/Users/endrit/.nuget/packages/",
-      "outputPath": "/Users/endrit/Desktop/projects/stark-prosperas/ScsMarketplaceAPIDotNet/ScsMarketplace.API/obj/",
+      "outputPath": "/Users/endrit/Desktop/projects/stark-prosperas/ScsMarketPlaceAPI.NET/ScsMarketplace.API/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/endrit/.nuget/NuGet/NuGet.Config"

@@ -29,7 +29,7 @@ public class ExampleController : ControllerBase
         if (!ModelState.IsValid) return BadRequest();
 
         _examples.Add(newExample);
-        _messageProducer.SendingMessage<ExampleModel>(newExample);
+        _messageProducer.SendingMessage(newExample);
 
         return Ok();
     } 

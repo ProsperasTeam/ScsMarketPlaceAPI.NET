@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScsMarketplace.API", "ScsMa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScsMarketplace.TestService", "ScsMarketplace.TestService\ScsMarketplace.TestService.csproj", "{214BD6B9-2E8C-4332-9A8F-826735E8B5B0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScsMarketplace.V2", "ScsMarketplace.V2\ScsMarketplace.V2.csproj", "{BB7153BA-82BD-4E05-A50E-22F0AE5DDAD1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{214BD6B9-2E8C-4332-9A8F-826735E8B5B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{214BD6B9-2E8C-4332-9A8F-826735E8B5B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{214BD6B9-2E8C-4332-9A8F-826735E8B5B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB7153BA-82BD-4E05-A50E-22F0AE5DDAD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB7153BA-82BD-4E05-A50E-22F0AE5DDAD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB7153BA-82BD-4E05-A50E-22F0AE5DDAD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB7153BA-82BD-4E05-A50E-22F0AE5DDAD1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
