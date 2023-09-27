@@ -29,12 +29,20 @@ namespace ScsMarketplace.API.Services
 
             using var channel = connection.CreateModel();
 
-            channel.QueueDeclare("testQueue", durable: true, exclusive: false, autoDelete: false);
 
             var jsonString = JsonSerializer.Serialize(message);
             var body = Encoding.UTF8.GetBytes(jsonString);
+            try
+            {
+                channel.ExchangeDeclare("basicExchange", ExchangeType.Topic, true, false);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogWarning(ex, "Exchange already declared");
+            }
 
-            channel.BasicPublish("", "testQueue", body: body);
+
+            channel.BasicPublish("basicExchange", "create.user", body: body);
         }
     }
 }

@@ -34,6 +34,7 @@ namespace ScsMarketplace.V2
 
 
             channel.QueueDeclare("testQueue", durable: true, exclusive: false, autoDelete: false);
+            channel.QueueBind("testQueue", "basicExchange", "create.user");
 
             var consumer = new EventingBasicConsumer(channel);
 
@@ -43,7 +44,7 @@ namespace ScsMarketplace.V2
                 var body = eventArgs.Body.ToArray();
                 var message = Encoding.UTF8.GetString(body);
 
-                _logger.LogInformation("A message has been received: ", message);
+                _logger.LogInformation("A message has been received: {message}", message);
 
             };
 
