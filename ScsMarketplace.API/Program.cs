@@ -6,6 +6,14 @@ using Microsoft.Extensions.Logging;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
+// Change the port to 5000
+builder.WebHost.ConfigureKestrel(options =>
+{
+    options.ListenAnyIP(5000);
+});
+
+
 // Add services to the container.
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
