@@ -12,14 +12,53 @@
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.11" />
     <PackageReference Include="RabbitMQ.Client" Version="6.5.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.11" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.11">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
   </ItemGroup>
 
   <ItemGroup>
     <None Remove="Models\" />
     <None Remove="Services\" />
+    <None Remove="Services\MessageProducer\" />
+    <None Remove="Controllers\Config\" />
+    <None Remove="Models\Config\" />
+    <None Remove="Services\Config\" />
+    <None Remove="Repository\" />
+    <None Remove="Repository\Account\" />
+    <None Remove="Repository\Organization\" />
+    <None Remove="Repository\Listing\" />
+    <None Remove="Repository\Country\" />
+    <None Remove="Repository\Product\" />
+    <None Remove="Config\" />
+    <None Remove="Models\Product\" />
+    <None Remove="Models\Account\" />
+    <None Remove="Models\Country\" />
+    <None Remove="Models\Organization\" />
+    <None Remove="Data\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
     <Folder Include="Services\" />
+    <Folder Include="Services\MessageProducer\" />
+    <Folder Include="Controllers\Config\" />
+    <Folder Include="Models\" />
+    <Folder Include="Models\Config\" />
+    <Folder Include="Services\Config\" />
+    <Folder Include="Repository\" />
+    <Folder Include="Repository\Account\" />
+    <Folder Include="Repository\Organization\" />
+    <Folder Include="Repository\Listing\" />
+    <Folder Include="Repository\Country\" />
+    <Folder Include="Repository\Product\" />
+    <Folder Include="Config\" />
+    <Folder Include="Models\Product\" />
+    <Folder Include="Models\Account\" />
+    <Folder Include="Models\Country\" />
+    <Folder Include="Models\Organization\" />
+    <Folder Include="Data\" />
   </ItemGroup>
 </Project>

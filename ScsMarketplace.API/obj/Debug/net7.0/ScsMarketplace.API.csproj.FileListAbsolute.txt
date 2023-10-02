@@ -66,3 +66,13 @@
 /Users/endrit/Desktop/projects/stark-prosperas/ScsMarketPlaceAPI.NET/ScsMarketplace.API/obj/Debug/net7.0/ScsMarketplace.API.pdb
 /Users/endrit/Desktop/projects/stark-prosperas/ScsMarketPlaceAPI.NET/ScsMarketplace.API/obj/Debug/net7.0/ScsMarketplace.API.genruntimeconfig.cache
 /Users/endrit/Desktop/projects/stark-prosperas/ScsMarketPlaceAPI.NET/ScsMarketplace.API/obj/Debug/net7.0/ref/ScsMarketplace.API.dll
+/Users/endrit/Desktop/projects/stark-prosperas/ScsMarketPlaceAPI.NET/ScsMarketplace.API/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.dll
+/Users/endrit/Desktop/projects/stark-prosperas/ScsMarketPlaceAPI.NET/ScsMarketplace.API/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/endrit/Desktop/projects/stark-prosperas/ScsMarketPlaceAPI.NET/ScsMarketplace.API/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/endrit/Desktop/projects/stark-prosperas/ScsMarketPlaceAPI.NET/ScsMarketplace.API/bin/Debug/net7.0/Npgsql.dll
+/Users/endrit/Desktop/projects/stark-prosperas/ScsMarketPlaceAPI.NET/ScsMarketplace.API/bin/Debug/net7.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
+/Users/endrit/Desktop/projects/stark-prosperas/ScsMarketPlaceAPI.NET/ScsMarketplace.API/bin/Debug/net7.0/Humanizer.dll
+/Users/endrit/Desktop/projects/stark-prosperas/ScsMarketPlaceAPI.NET/ScsMarketplace.API/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Design.dll
+/Users/endrit/Desktop/projects/stark-prosperas/ScsMarketPlaceAPI.NET/ScsMarketplace.API/bin/Debug/net7.0/Microsoft.Extensions.DependencyModel.dll
+/Users/endrit/Desktop/projects/stark-prosperas/ScsMarketPlaceAPI.NET/ScsMarketplace.API/bin/Debug/net7.0/Mono.TextTemplating.dll
+/Users/endrit/Desktop/projects/stark-prosperas/ScsMarketPlaceAPI.NET/ScsMarketplace.API/bin/Debug/net7.0/System.CodeDom.dll
