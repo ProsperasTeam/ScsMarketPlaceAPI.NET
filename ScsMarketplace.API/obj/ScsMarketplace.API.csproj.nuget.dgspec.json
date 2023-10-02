@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/endrit/Desktop/projects/stark-prosperas/ScsMarketPlaceAPI.NET/ScsMarketplace.API/ScsMarketplace.API.csproj": {}
+    "/Users/nderim/Desktop/STRONG/ScsMarketPlaceAPI.NET/ScsMarketplace.API/ScsMarketplace.API.csproj": {}
   },
   "projects": {
-    "/Users/endrit/Desktop/projects/stark-prosperas/ScsMarketPlaceAPI.NET/ScsMarketplace.API/ScsMarketplace.API.csproj": {
+    "/Users/nderim/Desktop/STRONG/ScsMarketPlaceAPI.NET/ScsMarketplace.API/ScsMarketplace.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/endrit/Desktop/projects/stark-prosperas/ScsMarketPlaceAPI.NET/ScsMarketplace.API/ScsMarketplace.API.csproj",
+        "projectUniqueName": "/Users/nderim/Desktop/STRONG/ScsMarketPlaceAPI.NET/ScsMarketplace.API/ScsMarketplace.API.csproj",
         "projectName": "ScsMarketplace.API",
-        "projectPath": "/Users/endrit/Desktop/projects/stark-prosperas/ScsMarketPlaceAPI.NET/ScsMarketplace.API/ScsMarketplace.API.csproj",
-        "packagesPath": "/Users/endrit/.nuget/packages/",
-        "outputPath": "/Users/endrit/Desktop/projects/stark-prosperas/ScsMarketPlaceAPI.NET/ScsMarketplace.API/obj/",
+        "projectPath": "/Users/nderim/Desktop/STRONG/ScsMarketPlaceAPI.NET/ScsMarketplace.API/ScsMarketplace.API.csproj",
+        "packagesPath": "/Users/nderim/.nuget/packages/",
+        "outputPath": "/Users/nderim/Desktop/STRONG/ScsMarketPlaceAPI.NET/ScsMarketplace.API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/endrit/.nuget/NuGet/NuGet.Config"
+          "/Users/nderim/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -38,7 +38,15 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.11, )"
             },

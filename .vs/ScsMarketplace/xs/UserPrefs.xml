@@ -1,38 +1,32 @@
 ﻿<Properties StartupConfiguration="{BB7153BA-82BD-4E05-A50E-22F0AE5DDAD1}|https">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.ScsMarketplace.V2 PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/endrit/Desktop/projects/stark-prosperas/ScsMarketPlaceAPI.NET/ScsMarketplace.TestService/Program.cs" relfile="ScsMarketplace.TestService/Program.cs" line="7" column="1" />
-      <Breakpoint file="/Users/endrit/Desktop/projects/stark-prosperas/ScsMarketPlaceAPI.NET/ScsMarketplace.TestService/Program.cs" relfile="ScsMarketplace.TestService/Program.cs" line="25" column="1" />
+      <Breakpoint file="/Users/nderim/Desktop/STRONG/ScsMarketPlaceAPI.NET/ScsMarketplace.TestService/Program.cs" relfile="ScsMarketplace.TestService/Program.cs" line="7" column="1" />
+      <Breakpoint file="/Users/nderim/Desktop/STRONG/ScsMarketPlaceAPI.NET/ScsMarketplace.TestService/Program.cs" relfile="ScsMarketplace.TestService/Program.cs" line="25" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ScsMarketplace.V2/Consumer.cs">
+  <MonoDevelop.Ide.ItemProperties.ScsMarketplace.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ScsMarketplace.V2/appsettings.json">
     <Files>
-      <File FileName="ScsMarketplace.API/Services/MessageProducer.cs" Line="21" Column="50" />
-      <File FileName="ScsMarketplace.API/Program.cs" Line="11" Column="39" />
-      <File FileName="ScsMarketplace.API/Controllers/ExampleController.cs" Line="17" Column="1" />
-      <File FileName="ScsMarketplace.API/Services/IMessageProducer.cs" Line="1" Column="1" />
-      <File FileName="ScsMarketplace.V2/Program.cs" Line="1" Column="1" />
-      <File FileName="ScsMarketplace.V2/Consumer.cs" Line="46" Column="82" />
+      <File FileName="ScsMarketplace.V2/appsettings.Development.json" Line="1" Column="1" IsPinned="True" />
+      <File FileName="ScsMarketplace.API/Program.cs" />
+      <File FileName="ScsMarketplace.API/appsettings.json" />
+      <File FileName="ScsMarketplace.V2/appsettings.json" Line="14" Column="4" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ScsMarketplace" expanded="True">
-            <Node name="ScsMarketplace.API" expanded="True">
-              <Node name="Dependencies" expanded="True" />
-              <Node name="Controllers" expanded="True" />
-              <Node name="Models" expanded="True" />
-              <Node name="Services" expanded="True" />
+            <Node name="ScsMarketplace.V2" expanded="True">
+              <Node name="appsettings.json" expanded="True" selected="True" />
             </Node>
-            <Node name="ScsMarketplace.V2" expanded="True" />
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.ScsMarketplace.V2 PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.ScsMarketplace.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>
