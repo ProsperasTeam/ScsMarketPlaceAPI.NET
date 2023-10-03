@@ -13,7 +13,6 @@ public class ExampleController : ControllerBase
 
     private readonly IMessageProducer _messageProducer;
 
-    // In-Memory DB Test
 
     public static readonly List<ExampleModel> _examples = new();
 
