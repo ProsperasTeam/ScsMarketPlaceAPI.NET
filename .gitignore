@@ -1,5 +1,5 @@
 #Ignore configuratio files for every service
-*/appsettings.json
+*appsettings.json
 
 
 ## Ignore Visual Studio temporary files, build results, and
