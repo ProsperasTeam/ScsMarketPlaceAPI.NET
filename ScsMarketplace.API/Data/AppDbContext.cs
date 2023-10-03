@@ -16,7 +16,7 @@ namespace ScsMarketplace.API.Persistence
 		{
 		}
 
-        public DbSet<AccountModel> Accounts { get; set; }
+        public DbSet<AccountModel> account { get; set; }
 		public DbSet<ConfigOrgModel> Configs { get; set; }
 		public DbSet<CountryModel> Countries { get; set; }
 		public DbSet<OrganizationModel> Organizations { get; set; }

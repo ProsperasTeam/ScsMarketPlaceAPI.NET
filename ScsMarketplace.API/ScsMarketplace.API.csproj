@@ -39,6 +39,7 @@
     <None Remove="Models\Country\" />
     <None Remove="Models\Organization\" />
     <None Remove="Data\" />
+    <None Remove="Controllers\Accounts\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
@@ -60,5 +61,6 @@
     <Folder Include="Models\Country\" />
     <Folder Include="Models\Organization\" />
     <Folder Include="Data\" />
+    <Folder Include="Controllers\Accounts\" />
   </ItemGroup>
 </Project>
