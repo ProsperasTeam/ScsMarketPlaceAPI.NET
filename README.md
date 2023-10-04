@@ -58,3 +58,16 @@ After running your microservice, access it through the specified endpoint (e.g.,
 ```bash
 http://localhost:5000/swagger/index.html
 ```
+
+
+## Dotnet
+
+-   Run the services on development mode
+```bash
+dotnet run --environment Development
+```
+
+-  Run services on production mode
+```bash
+dotnet run --environment Production
+```

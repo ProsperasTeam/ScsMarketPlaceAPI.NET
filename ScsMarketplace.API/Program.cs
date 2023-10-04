@@ -5,8 +5,17 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Hosting;
 
-var builder = WebApplication.CreateBuilder(args);
+// Instance for configuration 
+var configuration = new ConfigurationBuilder()
+    .SetBasePath(Directory.GetCurrentDirectory())
+    .AddJsonFile("appsettings.json")
+    .AddJsonFile($"appsettings.{Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT")}.json", optional: true)
+    .Build();
 
+// Test common configuration 
+var commonSetting1 = configuration["CommonConfig:CommonSetting1"];
+
+var builder = WebApplication.CreateBuilder(args);
 
 // Change the port to 5000
 builder.WebHost.ConfigureKestrel(options =>
