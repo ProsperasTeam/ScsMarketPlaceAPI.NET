@@ -5,7 +5,8 @@ WORKDIR /app
 EXPOSE 80
 EXPOSE 443
 
-ENV ASPNETCORE_ENVIRONMENT Development
+# We can send this parameter also when running the app using dotnet
+ENV ASPNETCORE_ENVIRONMENT Development   
 
 
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
@@ -22,4 +23,4 @@ RUN dotnet publish "ScsMarketplace.API.csproj" -c Release -o /app/publish /p:Use
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "ScsMarketplace.API.dll"]
+ENTRYPOINT ["dotnet", "ScsMarketplace.API.dll", "--environment", "Development"]
