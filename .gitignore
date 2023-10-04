@@ -1,5 +1,6 @@
 #Ignore configuratio files for every service
 # */appsettings.json
+config.json 
 
 # Ignore build artifacts, binaries, and temporary files
 
