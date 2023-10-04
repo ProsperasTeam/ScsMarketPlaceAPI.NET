@@ -1564,9 +1564,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/endrit/Desktop/projects/stark-prosperas/ScsMarketPlaceAPI.NET/ScsMarketplace.TestService/ScsMarketplace.TestService.csproj",
-      "projectName": "ScsMarketplace.TestService",
-      "projectPath": "/Users/endrit/Desktop/projects/stark-prosperas/ScsMarketPlaceAPI.NET/ScsMarketplace.TestService/ScsMarketplace.TestService.csproj",
+      "projectUniqueName": "/Users/endrit/Desktop/projects/stark-prosperas/ScsMarketPlaceAPI.NET/ScsMarketplace.TestService/OrganizationService.csproj",
+      "projectName": "OrganizationService",
+      "projectPath": "/Users/endrit/Desktop/projects/stark-prosperas/ScsMarketPlaceAPI.NET/ScsMarketplace.TestService/OrganizationService.csproj",
       "packagesPath": "/Users/endrit/.nuget/packages/",
       "outputPath": "/Users/endrit/Desktop/projects/stark-prosperas/ScsMarketPlaceAPI.NET/ScsMarketplace.TestService/obj/",
       "projectStyle": "PackageReference",

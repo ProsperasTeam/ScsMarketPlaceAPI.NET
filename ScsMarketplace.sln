@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 25.0.1706.4
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScsMarketplace.API", "ScsMarketplace.API\ScsMarketplace.API.csproj", "{78EFAB06-6CD8-4598-A326-AE8515CC46A0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountService", "ScsMarketplace.API\AccountService.csproj", "{78EFAB06-6CD8-4598-A326-AE8515CC46A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScsMarketplace.TestService", "ScsMarketplace.TestService\ScsMarketplace.TestService.csproj", "{214BD6B9-2E8C-4332-9A8F-826735E8B5B0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrganizationService", "ScsMarketplace.TestService\OrganizationService.csproj", "{214BD6B9-2E8C-4332-9A8F-826735E8B5B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScsMarketplace.V2", "ScsMarketplace.V2\ScsMarketplace.V2.csproj", "{BB7153BA-82BD-4E05-A50E-22F0AE5DDAD1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductService", "ScsMarketplace.V2\ProductService.csproj", "{BB7153BA-82BD-4E05-A50E-22F0AE5DDAD1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,4 +1,5 @@
 ﻿<Properties StartupConfiguration="{78EFAB06-6CD8-4598-A326-AE8515CC46A0}|https">
+  <MonoDevelop.Ide.ItemProperties.AccountService PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/endrit/Desktop/projects/stark-prosperas/ScsMarketPlaceAPI.NET/ScsMarketplace.TestService/Program.cs" relfile="ScsMarketplace.TestService/Program.cs" line="7" column="1" />
@@ -6,6 +7,7 @@
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.ProductService PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workbench ActiveDocument="ScsMarketplace.API/Dockerfile">
     <Files>
       <File FileName="ScsMarketplace.API/Services/MessageProducer/MessageProducer.cs" Line="23" Column="45" />
@@ -42,7 +44,5 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.ScsMarketplace.V2 PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.ScsMarketplace.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>

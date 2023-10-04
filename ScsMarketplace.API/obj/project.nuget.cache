@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wT24bnDi4jwQ5wBcp1AcuLjjUuCSjVtBS8f5RATr4mEvSks9OdLADQMFuqtCpW6t0vBOrxiADl35vjSm37vyTw==",
+  "dgSpecHash": "jnT705V0ACpxNtt1RWqO3i+G81299edwS4IM7MNIOELmHH9gCDbeLoh1CkR0rMD/EHD1zUY/jLPYYHePNy6McA==",
   "success": true,
-  "projectFilePath": "/Users/endrit/Desktop/projects/stark-prosperas/ScsMarketPlaceAPI.NET/ScsMarketplace.API/ScsMarketplace.API.csproj",
+  "projectFilePath": "/Users/endrit/Desktop/projects/stark-prosperas/ScsMarketPlaceAPI.NET/ScsMarketplace.API/AccountService.csproj",
   "expectedPackageFiles": [
     "/Users/endrit/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/endrit/.nuget/packages/microsoft.aspnetcore.openapi/7.0.11/microsoft.aspnetcore.openapi.7.0.11.nupkg.sha512",
