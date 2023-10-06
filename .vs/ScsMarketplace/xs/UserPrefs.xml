@@ -1,48 +1,22 @@
-﻿<Properties StartupConfiguration="{78EFAB06-6CD8-4598-A326-AE8515CC46A0}|https">
-  <MonoDevelop.Ide.ItemProperties.AccountService PreferredExecutionTarget="/Applications/Google Chrome.app" />
+﻿<Properties StartupConfiguration="{78EFAB06-6CD8-4598-A326-AE8515CC46A0}|Default">
+  <DisabledProjects>
+    <String>ScsMarketplace.API/ScsMarketplace.API.csproj</String>
+    <String>ScsMarketplace.TestService/ScsMarketplace.TestService.csproj</String>
+  </DisabledProjects>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/endrit/Desktop/projects/stark-prosperas/ScsMarketPlaceAPI.NET/ScsMarketplace.TestService/Program.cs" relfile="ScsMarketplace.TestService/Program.cs" line="7" column="1" />
-      <Breakpoint file="/Users/endrit/Desktop/projects/stark-prosperas/ScsMarketPlaceAPI.NET/ScsMarketplace.TestService/Program.cs" relfile="ScsMarketplace.TestService/Program.cs" line="25" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.ProductService PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ScsMarketplace.API/Dockerfile">
-    <Files>
-      <File FileName="ScsMarketplace.API/Services/MessageProducer/MessageProducer.cs" Line="23" Column="45" />
-      <File FileName="ScsMarketplace.API/Dockerfile" Line="5" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.AccountService PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="ScsMarketplace">
-            <Node name="Solution Items" expanded="True" />
-            <Node name="ScsMarketplace.API" expanded="True">
-              <Node name="Config" expanded="True" />
-              <Node name="Controllers" expanded="True">
-                <Node name="Config" expanded="True" />
-              </Node>
-              <Node name="Data" expanded="True" />
-              <Node name="Migrations" expanded="True" />
-              <Node name="Models" expanded="True">
-                <Node name="Account" expanded="True" />
-                <Node name="Config" expanded="True" />
-                <Node name="Country" expanded="True" />
-                <Node name="Organization" expanded="True" />
-                <Node name="Product" expanded="True" />
-              </Node>
-              <Node name="Services" expanded="True">
-                <Node name="Config" expanded="True" />
-                <Node name="MessageProducer" expanded="True" />
-              </Node>
-            </Node>
-            <Node name="ScsMarketplace.V2" expanded="True" />
-          </Node>
+          <Node name="ScsMarketplace" selected="True" />
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "JdnOcE5pYtM3829HcLp5mXkZeKxOZEV7NR8Kh8c3Qvc=",
-  "Source": "ScsMarketplace.API",
-  "BasePath": "_content/ScsMarketplace.API",
+  "Hash": "9EFwGxrIuFdTMVnOzx9J9VJB56g2VXSVrESkw7ztbsU=",
+  "Source": "AccountService",
+  "BasePath": "_content/AccountService",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
