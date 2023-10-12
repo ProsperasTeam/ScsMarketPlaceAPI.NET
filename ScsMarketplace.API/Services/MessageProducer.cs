@@ -11,6 +11,7 @@ namespace ScsMarketplace.API.Services
         {
             var factory = new ConnectionFactory()
             {
+                // test comment
                 HostName = "localhost",
                 UserName = "user",
                 Password = "mypass",
