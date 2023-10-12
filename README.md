@@ -131,6 +131,11 @@ dotnet run --environment Production
 dotnet new webapi -n YourMicroserviceName
 ```
 
+- Install packages
+```bash
+dotnet restore
+```
+
 ## Adding authentication 
 ```bash
 dotnet add package Microsoft.AspNetCore.Authentication
