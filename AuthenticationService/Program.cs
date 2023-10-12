@@ -1,8 +1,8 @@
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
-using ScsMarketplace.API.Persistence;
-using ScsMarketplace.API.Services;
+using AuthenticationService.Persistence;
+using AuthenticationService.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System;
@@ -44,7 +44,7 @@ builder.Services.AddEndpointsApiExplorer();
 // Register SwaggerGen
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "ScsMarketplace.API", Version = "v1" });
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "AuthenticationService", Version = "v1" });
 
     // Define the security scheme for X-Token (if needed)
     c.AddSecurityDefinition("X-Token", new OpenApiSecurityScheme
@@ -93,7 +93,7 @@ if (app.Environment.IsDevelopment())
 app.UseSwagger();
 app.UseSwaggerUI(c =>
 {
-    c.SwaggerEndpoint("/swagger/v1/swagger.json", "ScsMarketplace.API v1");
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "AuthenticationService v1");
     c.RoutePrefix = string.Empty;
 });
 
