@@ -26,6 +26,7 @@ services:
     container_name: "scsmarketplace-api"
     ports:     
       - "5000:5000"
+      - "6000:6000"
       - ":5672"
     depends_on:
       - rabbitmq

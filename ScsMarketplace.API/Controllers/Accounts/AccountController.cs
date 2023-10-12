@@ -7,14 +7,16 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ScsMarketplace.API.Models.Account;
 using ScsMarketplace.API.Persistence;
+using Microsoft.AspNetCore.Authorization;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace ScsMarketplace.API.Controllers.Accounts
 {
 
-    [Route("api/accounts")]
+    // [Authorize]    
     [ApiController]
+    [Route("api/accounts")]
     public class AccountController : ControllerBase
 
     {
@@ -31,9 +33,10 @@ namespace ScsMarketplace.API.Controllers.Accounts
         [HttpGet]
         public async Task<ActionResult<IEnumerable<AccountModel>>> GetAccounts()
         {
-            var accounts = await _context.account.ToListAsync();
-            _logger.LogInformation($"api response {accounts}");
-            return Ok(accounts);
+            // var accounts = await _context.account.ToListAsync();
+            // _logger.LogInformation($"api response {accounts}");
+            // return Ok(accounts);
+            return Ok();
         }
     }
 }

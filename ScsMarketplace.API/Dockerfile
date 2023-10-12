@@ -10,6 +10,10 @@ ENV ASPNETCORE_ENVIRONMENT Development
 
 
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
+
+WORKDIR "~"
+COPY config .
+
 WORKDIR /src
 COPY ["ScsMarketplace.API/ScsMarketplace.API.csproj", "ScsMarketplace.API/"]
 RUN dotnet restore "ScsMarketplace.API/ScsMarketplace.API.csproj"
