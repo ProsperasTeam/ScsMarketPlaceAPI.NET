@@ -126,6 +126,10 @@ dotnet run --environment Development
 dotnet run --environment Production
 ```
 
+- Add new service
+```bash
+dotnet new webapi -n YourMicroserviceName
+```
 
 ## Adding authentication 
 ```bash
