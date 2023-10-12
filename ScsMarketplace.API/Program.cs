@@ -46,7 +46,7 @@ builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "ScsMarketplace.API", Version = "v1" });
 
-    // Define the security scheme
+    // Define the security scheme for X-Token (if needed)
     c.AddSecurityDefinition("X-Token", new OpenApiSecurityScheme
     {
         Type = SecuritySchemeType.ApiKey,
@@ -55,25 +55,22 @@ builder.Services.AddSwaggerGen(c =>
         Description = "API Token",
     });
 
-    // Use the security requirement
-    c.AddSecurityRequirement(new OpenApiSecurityRequirement
-    {
-        {
-            new OpenApiSecurityScheme
-            {
-                Reference = new OpenApiReference
-                {
-                    Type = ReferenceType.SecurityScheme,
-                    Id = "X-Token"
-                }
-            },
-            new string[] { }
-        }
-    });
+    // // Define the security scheme for SessionId
+    // c.AddSecurityDefinition("SessionId", new OpenApiSecurityScheme
+    // {
+    //     Type = SecuritySchemeType.ApiKey,
+    //     In = ParameterLocation.Header,
+    //     Name = "SessionId",
+    //     Description = "Session ID",
+    // });
+
+    // Define a custom parameter for SessionId
+    // c.OperationFilter<AddSessionIdHeaderParameter>();
 });
 
+
 builder.Services.AddScoped<IMessageProducer, MessageProducer>();
- 
+
 // Database
 var connectionString = $"Host={_configuration["POSTGRES_HOST"]};"
     + $"Database={_configuration["POSTGRES_DATABASE"]};"
@@ -107,6 +104,8 @@ app.UseHttpsRedirection();
 // app.UseMiddleware<TokenAuthenticationMiddleware>(token1); // Load token from configuration
 // app.UseAuthentication();
 // app.UseAuthorization();
+
+// app.UseSessionAuthentication();
 
 app.MapControllers();
 app.Run();
