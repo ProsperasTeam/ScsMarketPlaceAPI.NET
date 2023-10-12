@@ -9,9 +9,17 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ScsMarketplace.TestService
 build_property.RootNamespace = ScsMarketplace.TestService
+<<<<<<< HEAD
 build_property.ProjectDir = c:\Users\emurseli\scm\ScsMarketPlaceAPI.NET\ScsMarketplace.TestService\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = c:\Users\emurseli\scm\ScsMarketPlaceAPI.NET\ScsMarketplace.TestService
+=======
+build_property.ProjectDir = /Users/nderim/Desktop/STRONG/ScsMarketPlaceAPI.NET/ScsMarketplace.TestService/
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/nderim/Desktop/STRONG/ScsMarketPlaceAPI.NET/ScsMarketplace.TestService
+>>>>>>> 9c05f53486c65afbb585a89e9e9cee4e11e00b72
 build_property._RazorSourceGeneratorDebug = 
