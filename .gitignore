@@ -19,7 +19,7 @@ config/*
 *.sln.docstates
 
 # Visual Studio files
-.vscode/
+# .vscode/
 .idea/
 *.suo
 *.ntvs*
@@ -44,8 +44,6 @@ Desktop.ini
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
 
-# VS Code directories
-.vscode/
 
 
 # NuGet Packages
@@ -72,9 +70,7 @@ logs/
 # Test Results
 TestResults/
 
-# Visual Studio Code
-.vscode/
-
+ 
 
 # User-specific files
 *.suo
@@ -83,7 +79,6 @@ TestResults/
 *.sln.docstates
 
 # User-specific Visual Studio directories
-.vscode/
 .idea/
 .vs/
 
