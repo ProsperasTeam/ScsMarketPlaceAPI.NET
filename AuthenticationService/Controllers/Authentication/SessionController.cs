@@ -24,27 +24,13 @@ namespace AuthenticationService.Controllers.Authentication
     [ApiController]
     public class SessionController : ControllerBase
     {
-        public class AppSettings
-        {
-            public string ClaroSessionIdAPI { get; set; }
-        }
+       
 
-        public class SessionValidationRequest
-        {
-            public string SessionId { get; set; }
-        }
+      
 
-        public class SessionValidationResponse
-        {
-            public bool success { get; set; }
-            public bool failure { get; set; }
-            public string mensaje { get; set; }
-        }
+       
 
-        public class ErrorResponse
-        {
-            public string Message { get; set; }
-        }
+       
 
         private readonly IHttpClientFactory _httpClientFactory;
         private readonly ILogger<SessionController> _logger;
@@ -98,7 +84,7 @@ namespace AuthenticationService.Controllers.Authentication
                     }
                     else
                     {
-                        var errorResponse = new ErrorResponse
+                        var errorResponse = new SessionValidationErrorResponse
                         {
                             Message = responseObject.mensaje
                         };
@@ -114,7 +100,7 @@ namespace AuthenticationService.Controllers.Authentication
             catch (Exception ex)
             {
                 // Handle exceptions and log as needed
-                var errorResponse = new ErrorResponse
+                var errorResponse = new SessionValidationErrorResponse
                 {
                     Message = ex.Message
                 };

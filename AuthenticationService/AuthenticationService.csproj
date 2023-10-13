@@ -29,46 +29,20 @@
   <ItemGroup>
     <None Remove="Models\" />
     <None Remove="Services\" />
-    <None Remove="Services\MessageProducer\" />
-    <None Remove="Controllers\Config\" />
-    <None Remove="Models\Config\" />
-    <None Remove="Services\Config\" />
     <None Remove="Repository\" />
-    <None Remove="Repository\Account\" />
-    <None Remove="Repository\Organization\" />
-    <None Remove="Repository\Listing\" />
-    <None Remove="Repository\Country\" />
-    <None Remove="Repository\Product\" />
     <None Remove="Config\" />
-    <None Remove="Models\Product\" />
-    <None Remove="Models\Account\" />
-    <None Remove="Models\Country\" />
-    <None Remove="Models\Organization\" />
     <None Remove="Data\" />
-    <None Remove="Controllers\Accounts\" />
     <None Remove="Controllers\Authentication\" />
+    <None Remove="Migrations\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
     <Folder Include="Services\" />
-    <Folder Include="Services\MessageProducer\" />
-    <Folder Include="Controllers\Config\" />
     <Folder Include="Models\" />
-    <Folder Include="Models\Config\" />
-    <Folder Include="Services\Config\" />
     <Folder Include="Repository\" />
-    <Folder Include="Repository\Account\" />
-    <Folder Include="Repository\Organization\" />
-    <Folder Include="Repository\Listing\" />
-    <Folder Include="Repository\Country\" />
-    <Folder Include="Repository\Product\" />
     <Folder Include="Config\" />
-    <Folder Include="Models\Product\" />
-    <Folder Include="Models\Account\" />
-    <Folder Include="Models\Country\" />
-    <Folder Include="Models\Organization\" />
     <Folder Include="Data\" />
-    <Folder Include="Controllers\Accounts\" />
     <Folder Include="Controllers\Authentication\" />
+    <Folder Include="Migrations\" />
   </ItemGroup>
 </Project>
