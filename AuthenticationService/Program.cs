@@ -9,22 +9,25 @@ using System;
 using System.IO;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
+using AuthenticationService.Controllers.Authentication;
+using Microsoft.Extensions.Configuration;
+
 
 
 // var parentDirectory = Directory.GetParent(Directory.GetCurrentDirectory()).FullName;
-var homedir = $"{Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)}";  // The directory containing your configuration files
-var environment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
-var externalConfigFileName = $"config\\{environment}.json";
+//var homedir = $"{Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)}";  // The directory containing your configuration files
+//var environment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
+//var externalConfigFileName = $"config\\{environment}.json";
 
 // Construct the file path using Path.Combine
-var externalConfigFilepath = Path.Combine(homedir, externalConfigFileName);
+//var externalConfigFilepath = Path.Combine(homedir, externalConfigFileName);
 // Load configuration here
-var _configuration = new ConfigurationBuilder()
-    .SetBasePath(Directory.GetCurrentDirectory())
-    .AddJsonFile("appsettings.json")
-    .AddJsonFile($"appsettings.{Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT")}.json", optional: false)
-    .AddJsonFile(externalConfigFilepath, optional: false)
-    .Build();
+//var _configuration = new ConfigurationBuilder()
+//    .SetBasePath(Directory.GetCurrentDirectory())
+//    .AddJsonFile("appsettings.json")
+//    .AddJsonFile($"appsettings.{Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT")}.json", optional: false)
+//    .AddJsonFile(externalConfigFilepath, optional: false)
+//    .Build();
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -40,6 +43,9 @@ builder.WebHost.ConfigureKestrel(options =>
 // Add services to the container.
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddHttpClient();
+
+
 
 // Register SwaggerGen
 builder.Services.AddSwaggerGen(c =>
@@ -68,17 +74,27 @@ builder.Services.AddSwaggerGen(c =>
     // c.OperationFilter<AddSessionIdHeaderParameter>();
 });
 
+var config = new ConfigurationBuilder()
+    .SetBasePath(builder.Environment.ContentRootPath)
+    .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+    .AddJsonFile($"appsettings.{builder.Environment.EnvironmentName}.json", optional: true)
+    .AddEnvironmentVariables()
+    .Build();
+
+var clarosessionidapi = config["ClaroSessionIdAPI"];
+
 
 builder.Services.AddScoped<IMessageProducer, MessageProducer>();
 
+
 // Database
-var connectionString = $"Host={_configuration["POSTGRES_HOST"]};"
-    + $"Database={_configuration["POSTGRES_DATABASE"]};"
-    + $"Port={_configuration["POSTGRES_PORT"]};"
-    + $"Username={_configuration["POSTGRES_USERNAME"]};"
-    + $"Password={_configuration["POSTGRES_PASSWORD"]};";
-builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseNpgsql(connectionString));
+//var connectionString = $"Host={_configuration["POSTGRES_HOST"]};"
+//    + $"Database={_configuration["POSTGRES_DATABASE"]};"
+//    + $"Port={_configuration["POSTGRES_PORT"]};"
+//    + $"Username={_configuration["POSTGRES_USERNAME"]};"
+//    + $"Password={_configuration["POSTGRES_PASSWORD"]};";
+//builder.Services.AddDbContext<AppDbContext>(options =>
+//    options.UseNpgsql(connectionString));
 
 
 var app = builder.Build();

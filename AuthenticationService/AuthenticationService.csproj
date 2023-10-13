@@ -20,6 +20,10 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -42,6 +46,7 @@
     <None Remove="Models\Organization\" />
     <None Remove="Data\" />
     <None Remove="Controllers\Accounts\" />
+    <None Remove="Controllers\Authentication\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
@@ -64,5 +69,6 @@
     <Folder Include="Models\Organization\" />
     <Folder Include="Data\" />
     <Folder Include="Controllers\Accounts\" />
+    <Folder Include="Controllers\Authentication\" />
   </ItemGroup>
 </Project>
