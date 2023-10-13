@@ -15,8 +15,9 @@ namespace AuthenticationService.Controllers.Accounts
 {
 
     // [Authorize]    
+    [Authorize]
     [ApiController]
-    [Route("api/accounts")]
+    [Route("api/accounts")]    
     public class AccountController : ControllerBase
 
     {
@@ -36,6 +37,7 @@ namespace AuthenticationService.Controllers.Accounts
             // var accounts = await _context.account.ToListAsync();
             // _logger.LogInformation($"api response {accounts}");
             // return Ok(accounts);
+            string a="sfsdf";
             return Ok();
         }
     }

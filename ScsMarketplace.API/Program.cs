@@ -104,8 +104,8 @@ app.UseHttpsRedirection();
 // app.UseMiddleware<TokenAuthenticationMiddleware>(token1); // Load token from configuration
 // app.UseAuthentication();
 // app.UseAuthorization();
+app.UseMiddleware<TokenAuthenticationMiddleware>("12345");
 
-// app.UseSessionAuthentication();
 
 app.MapControllers();
 app.Run();

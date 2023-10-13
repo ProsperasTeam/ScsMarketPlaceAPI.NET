@@ -6,9 +6,9 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/ScsMarketplace.API/bin/Debug/net7.0/ScsMarketplace.API.dll",
+            "program": "${workspaceFolder}/AuthenticationService/bin/Debug/net7.0/AuthenticationService.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/ScsMarketplace.API",
+            "cwd": "${workspaceFolder}/AuthenticationService",
             "stopAtEntry": false,
             "serverReadyAction": {
                 "action": "openExternally",
