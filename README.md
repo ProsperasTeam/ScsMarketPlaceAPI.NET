@@ -142,6 +142,10 @@ dotnet add package Microsoft.AspNetCore.Authentication
 dotnet add package Swashbuckle.AspNetCore
 ```
 
+## Add service to the project command
+```bash
+dotnet sln add ./AuthenticationService
+```
 
 ## Configuration files
 1.  configuration files should be stored on home directory (~/config) and set with specific permissions 

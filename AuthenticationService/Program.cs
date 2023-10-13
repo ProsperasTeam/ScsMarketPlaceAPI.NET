@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using AuthenticationService.Persistence;
@@ -8,7 +9,8 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.IO;
 using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.DependencyInjection;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Identity;
 
 
 // var parentDirectory = Directory.GetParent(Directory.GetCurrentDirectory()).FullName;
@@ -19,12 +21,13 @@ var externalConfigFileName = $"config\\{environment}.json";
 // Construct the file path using Path.Combine
 var externalConfigFilepath = Path.Combine(homedir, externalConfigFileName);
 // Load configuration here
-var _configuration = new ConfigurationBuilder()
+var configuration = new ConfigurationBuilder()
     .SetBasePath(Directory.GetCurrentDirectory())
     .AddJsonFile("appsettings.json")
     .AddJsonFile($"appsettings.{Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT")}.json", optional: false)
     .AddJsonFile(externalConfigFilepath, optional: false)
     .Build();
+
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -37,22 +40,57 @@ builder.WebHost.ConfigureKestrel(options =>
 });
 
 
+string expectedToken = configuration["SCS_API_KEY"]; // Make sure you define "ExpectedToken" in your configuration.
+// if (string.IsNullOrEmpty(expectedToken) || token != expectedToken)
+// {
+//     return AuthenticateResult.Fail("Invalid token.");
+// }
+
 // Add services to the container.
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
+
+builder.Services.AddSingleton<IConfiguration>(configuration);
+// Authorization and authentication
+builder.Services.AddAuthentication("TokenAuth")
+            .AddScheme<AuthenticationSchemeOptions, TokenAuthenticationHandler>("TokenAuth", options => { });
+
+builder.Services.AddAuthorization();
+// builder.Services.AddAuthorization(options =>
+//     {
+//         options.AddPolicy("TokenAuth", policy =>
+//         {
+//             policy.RequireAuthenticatedUser();
+//             // policy.Requirements.Add(new TokenRequirement("12345"));
+//         });
+//     });
+
 
 // Register SwaggerGen
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "AuthenticationService", Version = "v1" });
-
-    // Define the security scheme for X-Token (if needed)
     c.AddSecurityDefinition("X-Token", new OpenApiSecurityScheme
     {
         Type = SecuritySchemeType.ApiKey,
         In = ParameterLocation.Header,
         Name = "X-Token",
         Description = "API Token",
+    });
+
+    c.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "X-Token"
+                }
+            },
+            new string[] { }
+        }
     });
 
     // // Define the security scheme for SessionId
@@ -72,11 +110,11 @@ builder.Services.AddSwaggerGen(c =>
 builder.Services.AddScoped<IMessageProducer, MessageProducer>();
 
 // Database
-var connectionString = $"Host={_configuration["POSTGRES_HOST"]};"
-    + $"Database={_configuration["POSTGRES_DATABASE"]};"
-    + $"Port={_configuration["POSTGRES_PORT"]};"
-    + $"Username={_configuration["POSTGRES_USERNAME"]};"
-    + $"Password={_configuration["POSTGRES_PASSWORD"]};";
+var connectionString = $"Host={configuration["POSTGRES_HOST"]};"
+    + $"Database={configuration["POSTGRES_DATABASE"]};"
+    + $"Port={configuration["POSTGRES_PORT"]};"
+    + $"Username={configuration["POSTGRES_USERNAME"]};"
+    + $"Password={configuration["POSTGRES_PASSWORD"]};";
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(connectionString));
 
@@ -97,15 +135,16 @@ app.UseSwaggerUI(c =>
     c.RoutePrefix = string.Empty;
 });
 
+
+
+
+// app.UseMiddleware<TokenAuthenticationMiddleware>("token");
+app.UseAuthentication();
+app.UseAuthorization();
+
+
 app.UseHttpsRedirection();
 
-
-// string token1= "12465";//_configuration["CommonConfig:SCS_API_KEY"];
-// app.UseMiddleware<TokenAuthenticationMiddleware>(token1); // Load token from configuration
-// app.UseAuthentication();
-// app.UseAuthorization();
-
-// app.UseSessionAuthentication();
 
 app.MapControllers();
 app.Run();
