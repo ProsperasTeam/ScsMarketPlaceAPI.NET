@@ -16,22 +16,11 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace AuthenticationService.Controllers.Authentication
 {
-   
-
-
 
     [Route("api/session")]
     [ApiController]
     public class SessionController : ControllerBase
     {
-       
-
-      
-
-       
-
-       
-
         private readonly IHttpClientFactory _httpClientFactory;
         private readonly ILogger<SessionController> _logger;
         private readonly IConfiguration _configuration;
@@ -78,7 +67,7 @@ namespace AuthenticationService.Controllers.Authentication
                     // Deserialize the JSON response
                     var responseObject = JsonSerializer.Deserialize<SessionValidationResponse>(responseContent);
 
-                    if (responseObject.success)
+                    if (responseObject != null && responseObject.success)
                     {
                         return Ok(responseObject);
                     }
