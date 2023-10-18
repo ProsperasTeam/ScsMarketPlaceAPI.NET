@@ -2,7 +2,6 @@
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using AuthenticationService.Persistence;
-using AuthenticationService.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System;
@@ -19,9 +18,9 @@ using Microsoft.Extensions.Configuration;
 //var environment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
 //var externalConfigFileName = $"config\\{environment}.json";
 
-// Construct the file path using Path.Combine
+//// Construct the file path using Path.Combine
 //var externalConfigFilepath = Path.Combine(homedir, externalConfigFileName);
-// Load configuration here
+//// Load configuration here
 //var _configuration = new ConfigurationBuilder()
 //    .SetBasePath(Directory.GetCurrentDirectory())
 //    .AddJsonFile("appsettings.json")
@@ -74,17 +73,17 @@ builder.Services.AddSwaggerGen(c =>
     // c.OperationFilter<AddSessionIdHeaderParameter>();
 });
 
-var config = new ConfigurationBuilder()
+var configuration = new ConfigurationBuilder()
     .SetBasePath(builder.Environment.ContentRootPath)
     .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
     .AddJsonFile($"appsettings.{builder.Environment.EnvironmentName}.json", optional: true)
     .AddEnvironmentVariables()
     .Build();
 
-var clarosessionidapi = config["ClaroSessionIdAPI"];
+var clarosessionidapi = configuration["ClaroSessionIdAPI"];
 
 
-builder.Services.AddScoped<IMessageProducer, MessageProducer>();
+//builder.Services.AddScoped<IMessageProducer, MessageProducer>();
 
 
 // Database
@@ -93,8 +92,12 @@ builder.Services.AddScoped<IMessageProducer, MessageProducer>();
 //    + $"Port={_configuration["POSTGRES_PORT"]};"
 //    + $"Username={_configuration["POSTGRES_USERNAME"]};"
 //    + $"Password={_configuration["POSTGRES_PASSWORD"]};";
-//builder.Services.AddDbContext<AppDbContext>(options =>
-//    options.UseNpgsql(connectionString));
+
+//logger.LogCritical($"dbInformation => {connectionString}");
+string connectionString = configuration.GetConnectionString("DefaultConnection");
+
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseNpgsql(connectionString));
 
 
 var app = builder.Build();
