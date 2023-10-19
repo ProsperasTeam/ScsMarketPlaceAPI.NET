@@ -3,15 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 25.0.1706.4
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScsMarketplace.API", "ScsMarketplace.API\ScsMarketplace.API.csproj", "{78EFAB06-6CD8-4598-A326-AE8515CC46A0}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScsMarketplace.TestService", "ScsMarketplace.TestService\ScsMarketplace.TestService.csproj", "{214BD6B9-2E8C-4332-9A8F-826735E8B5B0}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScsMarketplace.V2", "ScsMarketplace.V2\ScsMarketplace.V2.csproj", "{BB7153BA-82BD-4E05-A50E-22F0AE5DDAD1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserService", "UserService\UserService.csproj", "{9C53D475-6FA8-49EA-857E-6895A6456F5B}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthenticationService", "AuthenticationService\AuthenticationService.csproj", "{1ED3D322-6E7F-4282-AEA9-727D698B7163}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScsMarketplace.API", "ScsMarketplace.API\ScsMarketplace.API.csproj", "{36C06D23-6C49-4DFD-84DB-D79A1D683474}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,22 +15,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{78EFAB06-6CD8-4598-A326-AE8515CC46A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{78EFAB06-6CD8-4598-A326-AE8515CC46A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{78EFAB06-6CD8-4598-A326-AE8515CC46A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{78EFAB06-6CD8-4598-A326-AE8515CC46A0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{214BD6B9-2E8C-4332-9A8F-826735E8B5B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{214BD6B9-2E8C-4332-9A8F-826735E8B5B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{214BD6B9-2E8C-4332-9A8F-826735E8B5B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{214BD6B9-2E8C-4332-9A8F-826735E8B5B0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BB7153BA-82BD-4E05-A50E-22F0AE5DDAD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BB7153BA-82BD-4E05-A50E-22F0AE5DDAD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB7153BA-82BD-4E05-A50E-22F0AE5DDAD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB7153BA-82BD-4E05-A50E-22F0AE5DDAD1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9C53D475-6FA8-49EA-857E-6895A6456F5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9C53D475-6FA8-49EA-857E-6895A6456F5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9C53D475-6FA8-49EA-857E-6895A6456F5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9C53D475-6FA8-49EA-857E-6895A6456F5B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6EE70AA7-9C03-4FF8-B297-C683D4447829}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6EE70AA7-9C03-4FF8-B297-C683D4447829}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EE70AA7-9C03-4FF8-B297-C683D4447829}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -43,6 +27,10 @@ Global
 		{1ED3D322-6E7F-4282-AEA9-727D698B7163}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1ED3D322-6E7F-4282-AEA9-727D698B7163}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1ED3D322-6E7F-4282-AEA9-727D698B7163}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36C06D23-6C49-4DFD-84DB-D79A1D683474}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36C06D23-6C49-4DFD-84DB-D79A1D683474}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36C06D23-6C49-4DFD-84DB-D79A1D683474}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36C06D23-6C49-4DFD-84DB-D79A1D683474}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
