@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScsMarketplace.TestService"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScsMarketplace.V2", "ScsMarketplace.V2\ScsMarketplace.V2.csproj", "{BB7153BA-82BD-4E05-A50E-22F0AE5DDAD1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserService", "UserService\UserService.csproj", "{BC524391-DBE9-4824-B684-551E9E5F666D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{BB7153BA-82BD-4E05-A50E-22F0AE5DDAD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB7153BA-82BD-4E05-A50E-22F0AE5DDAD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB7153BA-82BD-4E05-A50E-22F0AE5DDAD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC524391-DBE9-4824-B684-551E9E5F666D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC524391-DBE9-4824-B684-551E9E5F666D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC524391-DBE9-4824-B684-551E9E5F666D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC524391-DBE9-4824-B684-551E9E5F666D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
