@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScsMarketplace.V2", "ScsMar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthenticationService", "AuthenticationService\AuthenticationService.csproj", "{24504C94-CEF9-4379-AD4F-A0B8EBB799B1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyService", "CurrencyService\CurrencyService.csproj", "{7A8C19EE-ED9A-4ECD-BA09-358DDD49705D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{24504C94-CEF9-4379-AD4F-A0B8EBB799B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24504C94-CEF9-4379-AD4F-A0B8EBB799B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{24504C94-CEF9-4379-AD4F-A0B8EBB799B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A8C19EE-ED9A-4ECD-BA09-358DDD49705D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A8C19EE-ED9A-4ECD-BA09-358DDD49705D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A8C19EE-ED9A-4ECD-BA09-358DDD49705D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A8C19EE-ED9A-4ECD-BA09-358DDD49705D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
