@@ -1,39 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 25.0.1706.4
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScsMarketplace.API", "ScsMarketplace.API\ScsMarketplace.API.csproj", "{78EFAB06-6CD8-4598-A326-AE8515CC46A0}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScsMarketplace.TestService", "ScsMarketplace.TestService\ScsMarketplace.TestService.csproj", "{214BD6B9-2E8C-4332-9A8F-826735E8B5B0}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScsMarketplace.V2", "ScsMarketplace.V2\ScsMarketplace.V2.csproj", "{BB7153BA-82BD-4E05-A50E-22F0AE5DDAD1}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthenticationService", "AuthenticationService\AuthenticationService.csproj", "{24504C94-CEF9-4379-AD4F-A0B8EBB799B1}"
-EndProject
 Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{78EFAB06-6CD8-4598-A326-AE8515CC46A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{78EFAB06-6CD8-4598-A326-AE8515CC46A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{78EFAB06-6CD8-4598-A326-AE8515CC46A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{78EFAB06-6CD8-4598-A326-AE8515CC46A0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{214BD6B9-2E8C-4332-9A8F-826735E8B5B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{214BD6B9-2E8C-4332-9A8F-826735E8B5B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{214BD6B9-2E8C-4332-9A8F-826735E8B5B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{214BD6B9-2E8C-4332-9A8F-826735E8B5B0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BB7153BA-82BD-4E05-A50E-22F0AE5DDAD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BB7153BA-82BD-4E05-A50E-22F0AE5DDAD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BB7153BA-82BD-4E05-A50E-22F0AE5DDAD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BB7153BA-82BD-4E05-A50E-22F0AE5DDAD1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{24504C94-CEF9-4379-AD4F-A0B8EBB799B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{24504C94-CEF9-4379-AD4F-A0B8EBB799B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{24504C94-CEF9-4379-AD4F-A0B8EBB799B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{24504C94-CEF9-4379-AD4F-A0B8EBB799B1}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
