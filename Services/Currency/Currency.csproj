@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.11" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.11" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.11" />
+    <PackageReference Include="Microsoft.NETCore.Targets" Version="5.0.0" />
+    <PackageReference Include="FluentValidation" Version="11.8.0" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Common\" />
+    <None Remove="DataAccess\" />
+    <None Remove="Middleware\" />
+    <None Remove="Models\" />
+    <None Remove="Validators\" />
+    <None Remove="BusinessLogic\Contracts\" />
+    <None Remove="BusinessLogic\Implementations\" />
+    <None Remove="BusinessLogic\Contracts\Repositories\" />
+    <None Remove="CurrencyLogic\" />
+    <None Remove="CurrencyLogic\Contracts\Services\" />
+    <None Remove="CurrencyLogic\Implementations\Repositories\" />
+    <None Remove="CurrencyLogic\Implementations\Services\" />
+    <None Remove="DataAccess\Entities\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Common\" />
+    <Folder Include="DataAccess\" />
+    <Folder Include="Middleware\" />
+    <Folder Include="Models\" />
+    <Folder Include="Validators\" />
+    <Folder Include="CurrencyLogic\Contracts\" />
+    <Folder Include="CurrencyLogic\Implementations\" />
+    <Folder Include="CurrencyLogic\Contracts\Repositories\" />
+    <Folder Include="CurrencyLogic\" />
+    <Folder Include="CurrencyLogic\Contracts\Services\" />
+    <Folder Include="CurrencyLogic\Implementations\Repositories\" />
+    <Folder Include="CurrencyLogic\Implementations\Services\" />
+    <Folder Include="DataAccess\Entities\" />
+  </ItemGroup>
+</Project>
