@@ -21,9 +21,10 @@ configuration
 
 
 // Add services to the container.
-
+builder.Services.AddControllers();
 
 builder.Services.AddFluentValidationAutoValidation().AddFluentValidationClientsideAdapters();
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
