@@ -23,11 +23,7 @@ configuration
 // Add services to the container.
 
 
-
-builder.Services.AddControllers().AddFluentValidation( fvc =>
-{
-    fvc.RegisterValidatorsFromAssemblyContaining<Program>();
-});
+builder.Services.AddFluentValidationAutoValidation().AddFluentValidationClientsideAdapters();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
