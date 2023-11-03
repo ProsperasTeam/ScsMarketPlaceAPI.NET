@@ -1,4 +1,6 @@
 #Ignore configuratio files for every service
+.vscode/settings.json
+
 # */appsettings.json
 config.json 
 config/* 
