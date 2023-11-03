@@ -6,9 +6,9 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/AuthenticationService/bin/Debug/net7.0/AuthenticationService.dll",
+            "program": "${workspaceFolder}/Services/Business/bin/Debug/net6.0/Business.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/AuthenticationService",
+            "cwd": "${workspaceFolder}/Services/Business",
             "stopAtEntry": false,
             "serverReadyAction": {
                 "action": "openExternally",

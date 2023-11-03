@@ -9,16 +9,17 @@ using Microsoft.OpenApi.Models;
 var builder = WebApplication.CreateBuilder(args);
 
 ConfigurationManager configuration = builder.Configuration;
-
+var env=builder.Environment.EnvironmentName;
 var homedir = $"{Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)}";  
-var externalConfigFileName = $"config\\{builder.Environment.EnvironmentName}.json";
+var confDir="config";
+var externalConfigFileName = $"{env}.json";
+var externalConfigDir=Path.Combine(homedir,confDir);
+var externalConfigFilepath = Path.Combine(externalConfigDir, externalConfigFileName);
 
-var externalConfigFilepath = Path.Combine(homedir, externalConfigFileName);
 
 configuration
     .AddJsonFile(externalConfigFilepath, optional: false)
     .Build();
-
 
 // Add services to the container.
 
@@ -69,13 +70,18 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
+
+if (env!="Development"){
+    builder.WebHost.ConfigureKestrel(options =>
+    {
+        options.ListenAnyIP(int.Parse(configuration["service_port"]));
+    });
+}
+
+
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-
 // Add your custom error handling middleware here.
-
-
 app.UseSwagger();
 app.UseSwaggerUI();
 
@@ -89,5 +95,6 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
 
 app.Run();
